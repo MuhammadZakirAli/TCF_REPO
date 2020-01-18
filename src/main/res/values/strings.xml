@@ -40,13 +40,29 @@
         <item>Quiadaabad</item>
     </string-array>
     <string-array name="FormType">
-        <item>Civil</item>
+        <item>Painting</item>
         <item>Electrical</item>
         <item>Window</item>
         <item>Finishing</item>
         <item>Plumbing</item>
         <item>Woodwork</item>
+        <item>Civil</item>
     </string-array>
+
+    //array of score
+    <string-array name="score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    //array of priority
+    <string-array name="priority">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
     <string-array name="category">
         <item>BoundaryWall</item>
         <item>Flood</item>
@@ -88,6 +104,7 @@
         <item>Ayesha</item>
         <item>Ahsan</item>
     </string-array>
+
 
     <string name="title_activity_construction_management">ConstructionManagement</string>
     <string name="navigation_open">Open navigation</string>

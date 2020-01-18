@@ -1,5 +1,6 @@
 package com.example.tcfapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,13 +13,46 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class FillForm extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     String value ;
+    DatabaseReference dbref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_form);
+
+//        dbref= FirebaseDatabase.getInstance().getReference();
+//        dbref.child("CreateProject").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                final List<String> cname=new ArrayList<String>();
+//                for(DataSnapshot cnameSnapshot: dataSnapshot.getChildren())
+//                {
+//                    String campusname=cnameSnapshot.child("campusnametxt").getValue(String.class);
+//                    cname.add(campusname);
+//                }
+//                Spinner cnameSpinner=(Spinner)findViewById(R.id.browsimage);
+//                ArrayAdapter<String> cnameAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,cname);
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
 
         Button btn = findViewById(R.id.viewformtypebtn);
         final Spinner spinner = findViewById(R.id.formtype);
@@ -36,7 +70,7 @@ public class FillForm extends AppCompatActivity implements AdapterView.OnItemSel
                     switch (position)
                     {
                         case 0:
-                        value="Civil";
+                        value="Painting";
                         break;
 
                         case 1:
@@ -53,6 +87,9 @@ public class FillForm extends AppCompatActivity implements AdapterView.OnItemSel
                             break;
                         case 5:
                             value="Woodwork";
+                            break;
+                        case 6:
+                            value="Civil";
                             break;
                     }
             }
@@ -94,6 +131,10 @@ public class FillForm extends AppCompatActivity implements AdapterView.OnItemSel
                       case "Woodwork":
                           Intent Woodwork = new Intent(FillForm.this,WoodworkForm.class);
                           startActivity(Woodwork);
+                          break;
+                      case "Painting":
+                          Intent painting = new Intent(FillForm.this,PaintingForm.class);
+                          startActivity(painting);
                           break;
 
                   }

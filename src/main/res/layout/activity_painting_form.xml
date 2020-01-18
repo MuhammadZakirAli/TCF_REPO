@@ -9,12 +9,14 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10px" >
+        android:background="#A98BC34A"
+        android:padding="10px">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10px" >
+            android:padding="10px">
+
             <LinearLayout
                 android:id="@+id/parent"
                 android:layout_width="match_parent"
@@ -23,67 +25,70 @@
                 app:layout_constraintBottom_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
                     android:text="Painting Inspection Form"
-                    android:textColor="@color/colorPrimaryDark"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="140dp"/>
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
 
 
                 <LinearLayout
                     android:id="@+id/heading"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:orientation="horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@color/colorPrimaryDark">
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Item"
-                        android:textSize="10sp"
-                        android:layout_marginTop="15dp"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/white"/>
+                        android:layout_marginTop="15dp"
+                        android:text="Item"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="15dp"
                         android:text="Floors"
-                        android:textSize="10sp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginLeft="120dp"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Description"
-                        android:textSize="10sp"
-                        android:layout_marginTop="15dp"
                         android:layout_marginLeft="50dp"
-                        android:textColor="@color/white"/>
+                        android:layout_marginTop="15dp"
+                        android:text="Description"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="15dp"
                         android:text="Score"
-                        android:textSize="10sp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginLeft="40dp"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Priority"
-                        android:textSize="10sp"
-                        android:layout_marginTop="15dp"
                         android:layout_marginLeft="40dp"
-                        android:textColor="@color/white"/>
+                        android:layout_marginTop="15dp"
+                        android:text="Priority"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
 
                 </LinearLayout>
 
@@ -94,58 +99,74 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_cc_jali"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="cc jali"
-                        />
+                        android:text="cc jali" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="60dp">
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/pccjali_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/pccjali_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/pccjali_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
 
 
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/pccjali_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/pccjali_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/pccjali_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/pccjali_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/pccjali_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/Secondrow"
                     android:layout_width="wrap_content"
@@ -153,57 +174,73 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_low_wall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Low Wall"
-                        />
+                        android:lines="2"
+                        android:text="Low Wall" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/plow_wall_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/plow_wall_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/plow_wall_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/plow_wall_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/plow_wall_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/plow_wall_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/plow_wall_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/plow_wall_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/thirdrow"
                     android:layout_width="wrap_content"
@@ -211,57 +248,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_staircase"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="staircase"
-                        />
+                        android:text="staircase" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_staircase_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_staircase_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_staircase_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_staircase_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_staircase_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_staircase_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_staircase_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_staircase_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/fourthrow"
                     android:layout_width="wrap_content"
@@ -269,58 +321,74 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_parapet_wall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="parapet Wall"
-                        />
+                        android:lines="2"
+                        android:text="parapet \nWall" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp">
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_parapet_wall_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+
+                            android:id="@+id/p_parapet_wall_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_parapet_wall_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
 
                     <EditText
+                        android:id="@+id/p_parapet_wall_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_parapet_wall_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_parapet_wall_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_parapet_wall_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_parapet_wall_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/fifthrow"
                     android:layout_width="wrap_content"
@@ -328,57 +396,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_boundary_wall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Boundary Wall"
-                        />
+                        android:text="Boundary \nWall" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="10dp">
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_boundary_wall_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_boundary_wall_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_boundary_wall_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_boundary_wall_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_boundary_wall_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_boundary_wall_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_boundary_wall_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_boundary_wall_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/sixthrow"
                     android:layout_width="wrap_content"
@@ -386,57 +469,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_drive_way"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Drive Way"
-                        />
+                        android:text="Drive \nWay" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="35dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_drive_way_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_drive_way_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_drive_way_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_drive_way_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_drive_way_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_drive_way_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_drive_way_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_drive_way_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/seventhrow"
                     android:layout_width="wrap_content"
@@ -444,57 +542,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_walkway"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="WalkWay"
-                        />
+                        android:text="WalkWay" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="45dp">
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_walkway_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_walkway_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_walkway_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_walkway_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_walkway_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_walkway_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_walkway_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_walkway_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/eightrow"
                     android:layout_width="wrap_content"
@@ -502,57 +615,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_roof"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Roof"
-                        />
+                        android:text="Roof" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="70dp">
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_roof_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_roof_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_roof_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_roof_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_roof_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_roof_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_roof_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_roof_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/ninthrow"
                     android:layout_width="wrap_content"
@@ -560,57 +688,73 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_column"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Column"
-                        />
+                        android:text="Column" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="55dp">
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_column_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_column_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_column_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_column_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_column_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_column_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_column_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_column_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/tenthrow"
                     android:layout_width="wrap_content"
@@ -618,57 +762,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_beam"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Beam"
-                        />
+                        android:text="Beam" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="70dp">
+                        android:layout_marginLeft="35dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_beam_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_beam_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_beam_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_beam_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_beam_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_beam_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_beam_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_beam_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/eleventhrow"
                     android:layout_width="wrap_content"
@@ -676,57 +835,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_wall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wall"
-                        />
+                        android:text="Wall" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="80dp">
+                        android:layout_marginLeft="43dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_wall_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_wall_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_wall_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_wall_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_wall_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_wall_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_wall_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_wall_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/twelfthrow"
                     android:layout_width="wrap_content"
@@ -734,57 +908,72 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_wood_trusses"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wood Trusses"
-                        />
+                        android:text="Wood \nTrusses" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp">
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_wood_trusses_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_wood_trusses_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_wood_trusses_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_wood_trusses_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_wood_trusses_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_wood_trusses_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_wood_trusses_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_wood_trusses_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/thirteenrow"
                     android:layout_width="wrap_content"
@@ -792,56 +981,86 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/p_steel_trusses"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Steel Trusses"
-                        />
+                        android:text="Steel \nTrusses" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp">
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/p_steel_trusses_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_steel_trusses_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/p_steel_trusses_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
+
                     <EditText
+                        android:id="@+id/p_steel_trusses_dis"
                         android:layout_width="90dp"
-                        android:layout_height="100dp"/>
+                        android:layout_height="100dp" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <Spinner
+                            android:id="@+id/p_steel_trusses_sf"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_steel_trusses_ss"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
+
                         <Spinner
+                            android:id="@+id/p_steel_trusses_st"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
+
                     <Spinner
+                        android:id="@+id/p_steel_trusses_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
 
                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/paintingSubmit"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#2196F3"
+                        android:text="Submit"
+                        android:textAlignment="center" />
                 </LinearLayout>
 
 
