@@ -9,6 +9,7 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#A98BC34A"
         android:padding="10px" >
 
         <ScrollView
@@ -55,19 +56,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Floors"
-                        android:textSize="10sp"
+                        android:layout_marginLeft="80dp"
                         android:layout_marginTop="15dp"
-                        android:layout_marginLeft="120dp"
-                        android:textColor="@color/white"/>
+                        android:text="Floors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Description"
-                        android:textSize="10sp"
+                        android:layout_marginLeft="70dp"
                         android:layout_marginTop="15dp"
-                        android:layout_marginLeft="50dp"
-                        android:textColor="@color/white"/>
+                        android:text="Description"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -76,14 +78,15 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginLeft="40dp"
                         android:textColor="@color/white"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Priority"
-                        android:textSize="10sp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:layout_marginLeft="40dp"
-                        android:textColor="@color/white"/>
+                        android:text="Priority"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
 
                 </LinearLayout>
 
@@ -94,34 +97,40 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/Basins_1"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="cc jali"
+                        android:text="Basins 1"
                         />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="60dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/Basins_1f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/Basins_1s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/Basins_1t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
 
 
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/Basins_1dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -129,17 +138,21 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <Spinner
+                            android:id="@+id/Basins_1_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Basins_1_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Basins_1_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/Basins_1_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -153,32 +166,38 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/Taps_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Low Wall"
+                        android:text="Taps 1"
                         />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="25dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/Taps_1_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/Taps_1_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/Taps_1_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/Taps_1_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -187,17 +206,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/Taps_1_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Taps_1_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Taps_1_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/Taps_1_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -211,32 +234,37 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/WC_Flush"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="staircase"
-                        />
+                        android:text="WC/Flush Tank 1" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/WC_Flush_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/WC_Flush_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/WC_Flush_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/WC_Flush_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -245,17 +273,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/WC_Flush_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/WC_Flush_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/WC_Flush_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/WC_Flush_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -269,33 +301,38 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/Plumbing_fixtures"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="parapet Wall"
-                        />
+                        android:text="Plumbing fixtures (valves, traps etc)" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/Plumbing_fixtures_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/Plumbing_fixtures_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/Plumbing_fixtures_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
 
                     <EditText
+                        android:id="@+id/Plumbing_fixtures_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -304,17 +341,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/Plumbing_fixtures_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Plumbing_fixtures_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Plumbing_fixtures_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/Plumbing_fixtures_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -328,32 +369,37 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/Septic_Tank"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="Boundary Wall"
-                        />
+                        android:text="Septic Tank 1" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="10dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/Septic_Tank_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/Septic_Tank_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/Septic_Tank_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/Septic_Tank_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -362,17 +408,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/Septic_Tank_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Septic_Tank_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Septic_Tank_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/Septic_Tank_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -386,32 +436,37 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/Soak_pit"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="Drive Way"
-                        />
+                        android:text="Soak pit 1" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/Soak_pit_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/Soak_pit_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/Soak_pit_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/Soak_pit_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -420,17 +475,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/Soak_pit_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Soak_pit_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Soak_pit_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/Soak_pit_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -444,32 +503,37 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/UGW_Tank"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="WalkWay"
-                        />
+                        android:text="UGW Tank 1" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="45dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/UGW_Tank_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/UGW_Tank_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/UGW_Tank_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/UGW_Tank_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -478,17 +542,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/UGW_Tank_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/UGW_Tank_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/UGW_Tank_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/UGW_Tank_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -502,32 +570,38 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/OHW_Tank"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="Roof"
-                        />
+                        android:text="OHW Tank 1
+" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="70dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/OHW_Tank_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/OHW_Tank_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/OHW_Tank_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/OHW_Tank_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -536,17 +610,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/OHW_Tank_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/OHW_Tank_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/OHW_Tank_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/OHW_Tank_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -560,32 +638,37 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
+                        android:id="@+id/Drainage"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="Column"
-                        />
+                        android:text="Drainage 1" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="55dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/Drainage_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/Drainage_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/Drainage_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/Drainage_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -594,17 +677,21 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/Drainage_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Drainage_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Drainage_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/Drainage_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -618,32 +705,38 @@
                     android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/Manhole"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Beam"
+                        android:text="Manhole 1"
                         />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="70dp">
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
                         <CheckBox
+                            android:id="@+id/Manhole_f"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
+                            android:text="Fisrt Floor" />
+
                         <CheckBox
+                            android:id="@+id/Manhole_s"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
+                            android:text="Second Floor" />
+
                         <CheckBox
+                            android:id="@+id/Manhole_t"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
+                            android:text="Third Floor" />
                     </LinearLayout>
                     <EditText
+                        android:id="@+id/Manhole_dis"
                         android:layout_width="90dp"
                         android:layout_height="100dp"/>
                     <LinearLayout
@@ -652,199 +745,40 @@
                         android:orientation="vertical"
                         >
                         <Spinner
+                            android:id="@+id/Manhole_sf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Manhole_ss"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <Spinner
+                            android:id="@+id/Manhole_st"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <Spinner
+                        android:id="@+id/Manhole_pri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-
-                        />
+                        android:layout_marginTop="30dp" />
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/eleventhrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <CheckBox
-                        android:layout_width="wrap_content"
+                    <Button
+                        android:id="@+id/plumbingSubmit"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:text="Wall"
-                        />
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="80dp">
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
-                    </LinearLayout>
-                    <EditText
-                        android:layout_width="90dp"
-                        android:layout_height="100dp"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                    </LinearLayout>
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-
-                        />
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#2196F3"
+                        android:text="Submit"
+                        android:textAlignment="center" />
                 </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/twelfthrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Wood Trusses"
-                        />
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp">
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
-                    </LinearLayout>
-                    <EditText
-                        android:layout_width="90dp"
-                        android:layout_height="100dp"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                    </LinearLayout>
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/thirteenrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Steel Trusses"
-                        />
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp">
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Fisrt Floor"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Second Floor"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Third Floor"
-                            />
-                    </LinearLayout>
-                    <EditText
-                        android:layout_width="90dp"
-                        android:layout_height="100dp"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                    </LinearLayout>
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-
-                        />
-                </LinearLayout>
-
-
             </LinearLayout>
         </ScrollView>
     </HorizontalScrollView>

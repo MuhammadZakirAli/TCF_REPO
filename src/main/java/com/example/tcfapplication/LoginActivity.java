@@ -43,49 +43,52 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-               UserAcountLogin();
+               //UserAcountLogin();
+                Intent intent = new Intent(LoginActivity.this, ConstructionPanelActivity.class);
+                startActivity(intent);
+
             }
         });
     }
 
-    private void UserAcountLogin(){
-        String email,password;
-        email=UserEmail.getText().toString();
-        password=Userpassword.getText().toString();
-        progressBar.setVisibility(View.VISIBLE);
-        if(TextUtils.isEmpty(email)){
-            Toast.makeText(this, "Please Provide Email To login", Toast.LENGTH_SHORT).show();
-            UserEmail.setText("");
-            return;
-        }
-
-        if(TextUtils.isEmpty(password)){
-            Toast.makeText(this, "Please Provide Password To login", Toast.LENGTH_SHORT).show();
-            Userpassword.setText("");
-            return;
-        }
-
-
-        firebaseAuth.signInWithEmailAndPassword(email,password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_LONG).show();
-                            progressBar.setVisibility(View.GONE);
-
-                            Intent intent = new Intent(LoginActivity.this, ConstructionPanelActivity.class);
-                            startActivity(intent);
-
-                        }
-                        else {
-                            Toast.makeText(getApplicationContext(), "Login failed! Please try again later", Toast.LENGTH_LONG).show();
-                            progressBar.setVisibility(View.GONE);
-                            Userpassword.setText("");
-                        }
-                    }
-                });
-    }
+//    private void UserAcountLogin(){
+//        String email,password;
+//        email=UserEmail.getText().toString();
+//        password=Userpassword.getText().toString();
+//        progressBar.setVisibility(View.VISIBLE);
+//        if(TextUtils.isEmpty(email)){
+//            Toast.makeText(this, "Please Provide Email To login", Toast.LENGTH_SHORT).show();
+//            UserEmail.setText("");
+//            return;
+//        }
+//
+//        if(TextUtils.isEmpty(password)){
+//            Toast.makeText(this, "Please Provide Password To login", Toast.LENGTH_SHORT).show();
+//            Userpassword.setText("");
+//            return;
+//        }
+//
+//
+//        firebaseAuth.signInWithEmailAndPassword(email,password)
+//                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        if (task.isSuccessful()) {
+//                            Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_LONG).show();
+//                            progressBar.setVisibility(View.GONE);
+//
+//                            Intent intent = new Intent(LoginActivity.this, ConstructionPanelActivity.class);
+//                            startActivity(intent);
+//
+//                        }
+//                        else {
+//                            Toast.makeText(getApplicationContext(), "Login failed! Please try again later", Toast.LENGTH_LONG).show();
+//                            progressBar.setVisibility(View.GONE);
+//                            Userpassword.setText("");
+//                        }
+//                    }
+//                });
+//    }
     }
 
 

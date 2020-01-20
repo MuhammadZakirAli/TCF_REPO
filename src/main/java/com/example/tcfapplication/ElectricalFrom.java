@@ -18,8 +18,10 @@ public class ElectricalFrom extends AppCompatActivity {
 
     EditText Lighting_Fixtures_dis,Computer_outlets_dis,Telephone_set_dis,PTCL_line_dis,fan_dis,Switches_Sockets_dis,
     Main_DB_dis,DB_for_each_floor_dis,UPS_for_computer_lab_1_dis,Generator_1_dis,Electrical_motor_dis;
+
     CheckBox Lighting_FixturesCB,Computer_outletsCB,Telephone_setCB,PTCL_lineCB,fanCB,Switches_SocketsCB,
             Main_DBCB,DB_for_each_floorCB,UPS_for_computer_lab_1CB,Generator_1CB,Electrical_motorCB;
+
     CheckBox Lighting_Fixtures_f,Lighting_Fixtures_s,Lighting_Fixtures_t,
             Computer_outlets_f,Computer_outlets_s,Computer_outlets_t,
             Telephone_set_f,Telephone_set_s,Telephone_set_t,
@@ -102,6 +104,17 @@ public class ElectricalFrom extends AppCompatActivity {
         Electrical_motor_f=findViewById(R.id.Electrical_motor_f);
         Electrical_motor_s=findViewById(R.id.Electrical_motor_s);
         Electrical_motor_t=findViewById(R.id.Electrical_motor_t);
+        Lighting_Fixtures_dis=findViewById(R.id.elecLighting_dis);
+        Computer_outlets_dis=findViewById(R.id.elec_Computer_outlets_dis);
+        Telephone_set_dis=findViewById(R.id.elec_Telephone_set_dis);
+        PTCL_line_dis=findViewById(R.id.elec_PTCL_line_dis);
+        fan_dis=findViewById(R.id.elec_fan_dis);
+        Switches_Sockets_dis=findViewById(R.id.elec_Switches_Sockets_dis);
+        Main_DB_dis=findViewById(R.id.Main_DB_dis);
+        DB_for_each_floor_dis=findViewById(R.id.DB_for_each_floor_dis);
+        UPS_for_computer_lab_1_dis=findViewById(R.id.UPS_for_computer_lab_1_dis);
+        Generator_1_dis=findViewById(R.id.Generator_1_dis);
+        Electrical_motor_dis=findViewById(R.id.Electrical_motor_dis);
 
         //assignning Lighting_Fixtures_sf spinner
         ArrayAdapter<String> adpt_Lighting_Fixtures_sf = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,

@@ -64,6 +64,7 @@ public class PaintingForm extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_painting_form);
         dbpaintingform= FirebaseDatabase.getInstance().getReference("inspectionform/Painting");
+
         cc_jali=findViewById(R.id.p_cc_jali);
         low_wall=findViewById(R.id.p_low_wall);
         staircase=findViewById(R.id.p_staircase);
