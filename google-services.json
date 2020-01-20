@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "587354579383",
+    "firebase_url": "https://tcfcheck.firebaseio.com",
+    "project_id": "tcfcheck",
+    "storage_bucket": "tcfcheck.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587354579383:android:b892dfe6055153c48bc832",
+        "android_client_info": {
+          "package_name": "com.example.tcfapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587354579383-aib0qv1iecsbibu23j4dbia24srj170h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tcfapplication",
+            "certificate_hash": "2112ffbd88b66008a99f1b220fe92861be4b7146"
+          }
+        },
+        {
+          "client_id": "587354579383-11vflct76oh4eh6gt5vfloa5e9i9loag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJTrUiiZBUi8pUhGsYKjXex_sJ4Jghr50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587354579383-11vflct76oh4eh6gt5vfloa5e9i9loag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
